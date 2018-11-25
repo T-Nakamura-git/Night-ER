@@ -61,9 +61,11 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'haml-rails' # ERB じゃなくて Haml を使いたい
-gem 'therubyracer' #lessを使うために必要
-gem "less-rails" #lessを使うよ宣言
-gem 'twitter-bootstrap-rails' # Bootstrap の layout とかlessとかを generate してくれる gem "font-awesome-rails" #fontawsomeを使えるように
+gem 'bootstrap-sass'
 gem 'pry-rails', :group => :development #デバッグ用
 gem 'font-awesome-rails'
+gem 'carrierwave' 
+gem 'rmagick'
+gem 'kaminari'
+gem 'kaminari-bootstrap'
+gem 'ransack'

@@ -1,15 +1,9 @@
 <h1>test</h1>
 <font size='40'><%= @tops %></font>
-<hr>
-<table>
-  <tr>
-    <td>りんご</td>
-    <td>甘酸っぱい</td>
-    <td>おおむね赤</td>
-  </tr>
-  <tr>
-    <td>なつみかん</td>
-    <td>かなり酸っぱいと思う</td>
-    <td>たいてい黄色</td>
-  </tr>
-</table>
+<%= search_form_for(@q, url:search_path) do |f| %>
+<div>
+<%= f.label :title_cont, '名前' %>
+<%= f.search_field :title_cont %><!— 名称の部分一致 —>
+</div>
+<%= f.submit %>
+<% end %>

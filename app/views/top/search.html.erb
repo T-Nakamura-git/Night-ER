@@ -1,0 +1,12 @@
+<table>
+<thead> <tr>
+<th>名称</th> <th>住所</th> <th>説明</th> <th>価格</th> <th>地域</th> <th>分類</th>
+</tr>
+</thead>
+<tbody>
+<% @villas.each do |d| %> <tr>
+<td><%= d.title %></td> <td><%= d.address %></td> <td><%= d.description %></td> <td><%= d.price %></td> <td><%= d.area.name %></td> <td><%= d.category.name %></td>
+</tr>
+<% end %> </tbody>
+</table>
+<%= link_to '戻る', root_path %>
