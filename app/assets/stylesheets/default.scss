@@ -1,0 +1,193 @@
+/*====================↓indexのcss↓=====================*/
+
+.parallax-window{
+	margin-bottom: 0;
+    min-height: 800px;
+    background: transparent;
+	text-align: center;
+	
+}
+
+
+.ent-content {
+	text-align: center;
+	margin: 0px;
+	min-height: 800px;
+}
+
+
+ 
+.parallax-slider {
+     top: 0;
+     left: 0;
+}
+
+
+#main {
+	max-width: 100%;
+    padding: 0px;
+	margin: 0 auto ;
+	font-size:30px;
+	text-align: center;
+}
+#main ul {
+	display: inline-block;
+	text-align: left;
+	margin-top: 20px;
+	letter-spacing: 1px
+	
+}
+
+.ent-content h1 {
+	z-index: 50;
+	margin: 0px;
+	font-size: 170px;
+	padding: 1px;
+	font-family: impact;
+	text-shadow: 4px 4px 4px #999999;
+}	
+
+.ent-content .sub {
+	margin-bottom: 10px;
+	padding: 10px;
+	font-family:cursive ,sans-serif;
+	text-shadow: 4px 4px 4px #999999;
+}
+.ent-content p {
+	margin: 0;
+	text-shadow: 4px 4px 4px #999999;
+}
+
+.arrow {
+	margin: -10px;
+}
+	
+
+.attention{
+	font-family: 'Hiragino Kaku Gothic Std' ,sans-serif;
+}
+
+.anb{
+	display: inline-block;
+	margin-bottom: -10px;
+}
+
+.tri {
+	text-align: center;
+}
+
+
+
+.ent-content h2{
+	margin-top: 0px;
+}
+
+.line{
+	background: linear-gradient(transparent 90%, #ffffff 80% );
+	list-style-position: inside;
+	padding-top: 20px
+	
+}
+
+.ent-content li{
+	margin: 20px 0;
+	font-family: serif;
+	font-weight: 800;
+	font-size: 35px;
+	list-style-image: image-url("mark2.png");
+}
+
+.section1 {
+	color: #FFF;
+	min-height: 800px;
+	
+}
+
+.section2 {
+	color: #000;
+	margin-top: 0px;
+	
+}
+
+
+
+#footer {
+	width: 100%;
+	margin: 0;
+	padding: 15px 0;
+	text-align: left;
+	clear:both;
+	background: #c1c1c1;
+}
+
+#fwrap {
+	max-width:1400px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#flogo {
+	float: left;
+	width: 38%;
+	
+}
+
+#cr {
+	float: right;
+	text-align: right;
+	width: 50%;
+	font-size: 77%;
+	color: #fff;
+}
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+}
+
+.blink {
+  animation: blinkAnime 1.2s infinite alternate;
+}
+@keyframes blinkAnime{
+   0% { color: #d9d9d9 }
+ 100% { color: #ff000c }
+}
+
+.btn-xxl{
+	margin-top: 20px;
+	padding: 40px 100px;
+	font-size: 100%;
+	border-radius: 10px;
+}
+
+.dotless {
+	display: list-item;
+	list-style-type: decimal;
+}
+
+.flexbox {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.flexbox__item{
+    margin: 0 10px;
+    list-style: none;
+    font-family: 'ricty diminished', sans-serif;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+/*====================↓toppageのcss↓=====================*/
