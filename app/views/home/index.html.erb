@@ -3,7 +3,7 @@
         <div class="ent-content">
             <h1>Night-ER</h1>
                 <p class="sub">In order to use the emergency room correctly...</p>
-        		<ul>
+        		<ul class="firstlist">
         		<li><span class="line blink">意識がなく、呼びかけても反応がない。呼吸がない。</span></li>
         		<li><span class="line blink">急に胸が痛い、苦しい。呼吸するのがつらい。</span></li>
         		<li><span class="line blink">いきなり呂律が回らなくなった、口角が下がり、顔半分が歪んでいる。</span></li>
@@ -16,15 +16,18 @@
             
             
     </div>
+    <div class="ent-phrase">
+        <h2 class="secondtopic">このサイトは、夜間の病院受診に特化した情報サイトです。
+        <br>夜、病院を受診する時に役立つ情報を提供しています。<br>いざという時のために、夜病院にかかる際の知識を知る事が大事です。</h2>
+    </div>
         <div class="ent-content">
-            <div class="parallax-window section2 " data-parallax="scroll" data-image-src="<%= image_path("photo.jpg")%>">
-            <h2 class="secondtopic">このサイトは、夜間の病院受診に特化した情報サイトです。</h2>
-                <ul class="dotless">
+            <div class="parallax-window section2 " data-parallax="scroll" data-image-src="<%= image_path("sinnsatu.jpg")%>">
+                <ul class="dotless" style="list-style:none;">
                 <li>どんな病院があるか？</li>
                 <li>受診の際に気をつけたほうがいい事とは？</li>
                 <li>その他夜間受診に役立つ情報...</li>
                 </ul>
-                <p><%= button_to '詳しい情報を知る',  {method: :get, class: "btn-xxl", size: "30px 100px"} %></p>
+                <p><%= button_to( '詳しい情報を知る', {controller:"home", action:"toppage" },{method: :get,class: "btnxxl"}) %></p>
             </div>
         </div>
     </div>
@@ -33,7 +36,7 @@
         <a href>サイト規約</a>
         <a href>個人情報の扱いについて</a> 
         <a href>お問い合わせ</a> 
-		<div id="flogo"><a href="#"><img src ="<%= image_path("sitelogo.png")%>"></a></div>
+		<div id="flogo"><a href="/"><img src ="<%= image_path("sitelogo.png")%>"></a></div>
 		<div id="cr">Copyright &copy;  Night-ER. All rights reserved.</div>
 		</div>
 

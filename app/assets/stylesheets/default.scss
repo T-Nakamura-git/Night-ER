@@ -1,18 +1,21 @@
 /*====================↓indexのcss↓=====================*/
 
+
+
 .parallax-window{
 	margin-bottom: 0;
-    min-height: 800px;
+    min-height: 500px;
     background: transparent;
 	text-align: center;
-	
+	z-index: 5;
 }
 
 
 .ent-content {
 	text-align: center;
 	margin: 0px;
-	min-height: 800px;
+	min-height: 500px;
+	z-index: 5;
 }
 
 
@@ -29,6 +32,8 @@
 	margin: 0 auto ;
 	font-size:30px;
 	text-align: center;
+
+	
 }
 #main ul {
 	display: inline-block;
@@ -57,6 +62,13 @@
 	margin: 0;
 	text-shadow: 4px 4px 4px #999999;
 }
+
+.ent-phrase{
+	margin: 0px;
+	color:#fff;
+	background-color:#4e6ea0;
+}
+
 
 .arrow {
 	margin: -10px;
@@ -89,12 +101,12 @@
 	
 }
 
-.ent-content li{
+.firstlist{
 	margin: 20px 0;
 	font-family: serif;
 	font-weight: 800;
 	font-size: 35px;
-	list-style-image: image-url("mark2.png");
+	
 }
 
 .section1 {
@@ -117,7 +129,7 @@
 	padding: 15px 0;
 	text-align: left;
 	clear:both;
-	background: #c1c1c1;
+	background: #4e6ea0;
 }
 
 #fwrap {
@@ -155,7 +167,7 @@
  100% { color: #ff000c }
 }
 
-.btn-xxl{
+.btnxxl{
 	margin-top: 20px;
 	padding: 40px 100px;
 	font-size: 100%;
@@ -165,6 +177,7 @@
 .dotless {
 	display: list-item;
 	list-style-type: decimal;
+	padding-top: 50px;
 }
 
 .flexbox {
@@ -182,12 +195,17 @@
 }
 
 
+.ent-phrase{
+	height: 100px;
+	margin: -20px 0 0 0;
+	background-color: #4e6ea0;
+	text-align: center;
+}
+
+.secondtopic{
+	margin: 20px 0 0 0;
+}
 
 
 
 
-
-
-
-
-/*====================↓toppageのcss↓=====================*/

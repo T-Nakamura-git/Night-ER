@@ -47,8 +47,4 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: Portfolio_apps_production
-  username: Portfolio_apps
-  password: <%= ENV['PORTFOLIO_APPS_DATABASE_PASSWORD'] %>
+production: <%= ENV['CLEARDB_DATABASE_URL'] %>

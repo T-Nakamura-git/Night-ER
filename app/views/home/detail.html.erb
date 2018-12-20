@@ -1,12 +1,11 @@
-<div class="parallax-window" data-parallax="scroll" data-image-src="<%= image_path("byoin.jpg")%>">
+<div height="300px" class="parallax-window" data-parallax="scroll" data-image-src="<%= image_path("byoin.jpg")%>">
             <header>
-            <p><img src ="<%= image_path("sitelogo.png")%>"></p>
+            <p align="left"><a href="/toppage"><img src ="<%= image_path("sitelogo.png")%>"></a></p>
                 <ul class="box flexbox">
-                    <li class="flexbox__item" ><%= link_to 'About', 'home/detail'%></li>
-                    <li class="flexbox__item" ><%= link_to 'Database', 'home/detail'%></li>
-                    <li class="flexbox__item" ><%= link_to 'Blog', 'home/blog'%></li>
-                    <li class="flexbox__item" ><%= link_to 'Contact', 'home/form'%></li>
-                    
+                    <li class="flexbox__item" ><%= link_to 'About', '/detail'%></li>
+                    <li class="flexbox__item" ><%= link_to 'Database', '/hpdb'%></li>
+                    <li class="flexbox__item" ><%= link_to 'Blog', '/blog'%></li>
+                    <li class="flexbox__item" ><%= link_to 'Contact', '/form'%></li>
                 </ul>
             </header>
         </div>
@@ -17,7 +16,7 @@
         <a href>サイト規約</a>
         <a href>個人情報の扱いについて</a> 
         <a href>お問い合わせ</a> 
-		<div id="flogo"><a href="#"><img src ="<%= image_path("sitelogo.png")%>"></a></div>
+		<div id="flogo"><a href="/"><img src ="<%= image_path("sitelogo.png")%>"></a></div>
 		<div id="cr">Copyright &copy;  Night-ER. All rights reserved.</div>
 		</div>
     </div>
