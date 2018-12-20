@@ -5,13 +5,10 @@ class HomeController < ApplicationController
   def toppage
   end
   
-  def detail
+  def about
   end
   
-  def hpdb
-  end  
-  
-  def theory
+  def hospitals
   end  
   
   def info
