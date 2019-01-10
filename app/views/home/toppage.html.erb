@@ -1,8 +1,25 @@
 <%= render 'header' %>
-<div class="toptopic">
-    <h1 class="top-detail"><center>夜間診療に必要な情報を調べる</h1>
-    <p>地図から病院を探すことができます。選ぶと詳細な情報を知ることができます。</center></p>
-    
-    <ul>
+
+<div class="row">
+  <div class="col-sm-8">
+      <div class="toptopic">
+        <h1 class="top-detail">夜間診療に必要な情報を調べる</h1>
+        <p>地図から病院を探すことができます。選ぶと詳細な情報を知ることができます。</p>
+        
+        <div id="map" class="gmap"></div> 
+        <script>
+            handler = Gmaps.build('Google');
+            handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+            markers = handler.addMarkers(<%= raw @hash.to_json%>); 
+            handler.bounds.extendWith(markers); 
+            handler.fitMapToBounds();});
+        </script>
+        
+    </div>
+  </div>
+  <div class="col-sm-4">
+      <%= render 'sidebar' %>
+  </div>
 </div>
+
 <%= render 'footer' %>

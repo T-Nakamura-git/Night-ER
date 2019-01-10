@@ -1,0 +1,37 @@
+<%= render 'header' %>
+<div class="row">
+  <div class="col-sm-8">
+    <p id="notice"><%= notice %></p>
+    
+    <p>
+      <strong>Name:</strong>
+      <%= @hospital.name %>
+    </p>
+    
+    <p>
+      <strong>Address:</strong>
+      <%= @hospital.address %>
+    </p>
+    
+    <p>
+      <strong>review:</strong>
+      <%= @hospital.review %>
+    </p>
+    
+    <p>
+      <strong>latitude:</strong>
+      <%= @hospital.latitude %>
+    </p>
+    
+    <p>
+      <strong>longitude:</strong>
+      <%= @hospital.longitude %>
+    </p>
+ </div>
+  <div class="col-sm-4">
+      <%= render 'sidebar' %>
+  </div>
+</div>
+
+
+<%= render 'footer' %>

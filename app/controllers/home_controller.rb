@@ -3,6 +3,12 @@ class HomeController < ApplicationController
   end
   
   def toppage
+    @hospitals = Hospital.all
+    @hash = Gmaps4rails.build_markers(@hospitals) do |hospital, marker|
+      marker.lat hospital.latitude
+      marker.lng hospital.longitude
+      marker.infowindow render_to_string(partial: "home/infowindow", locals: { hospital: hospital })
+    end
   end
   
   def about
@@ -19,5 +25,10 @@ class HomeController < ApplicationController
   
   def form
   end  
+  
+  def detail
+    @hospitals = Hospital.all
+    @hospital = Hospital.find(params[:id])
+  end
   
 end

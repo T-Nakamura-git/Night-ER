@@ -1,12 +1,16 @@
  <header class="header">
-    <p  class="toplogo"　>
+    <p class="toplogo"　>
         <a href="/toppage"><img src ="<%= image_path("sitelogo.png",size:"300x100", align:"left" ) %>"></a>
     </p>
-    <ul class="box flexbox">
+    <ul class="flexbox" id="slicknav" >
+        <li class="flexbox__item" ><%= link_to 'TOP', '/toppage'%></li>
         <li class="flexbox__item" ><%= link_to 'このサイトについて', '/about'%></li>
         <li class="flexbox__item" ><%= link_to '病院一覧', '/hospitals'%></li>
         <li class="flexbox__item" ><%= link_to 'ブログ', '/blog'%></li>
         <li class="flexbox__item" ><%= link_to '問い合わせ', '/form'%></li>
     </ul>
+    
+</ul>
+
 </header>
 

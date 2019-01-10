@@ -21,6 +21,30 @@
 	text-align: center;
 	margin: 0px;
 	min-height: 500px;
+	h1 {
+		z-index: 50;
+		margin: 0px;
+		font-size: 170px;
+		padding: 1px;
+		font-family: impact;
+		text-shadow: 4px 4px 4px #999999;
+	}	
+	.sub {
+		margin-bottom: 10px;
+		padding: 10px;
+		font-family:cursive ,sans-serif;
+		text-shadow: 4px 4px 4px #999999;
+	}
+	.sub {
+		margin-bottom: 10px;
+		padding: 10px;
+		font-family:cursive ,sans-serif;
+		text-shadow: 4px 4px 4px #999999;
+	}
+	 p {
+		margin: 0;
+		text-shadow: 4px 4px 4px #999999;
+	 }
 }
 
 
@@ -37,38 +61,19 @@
 	margin: 0 auto ;
 	font-size:30px;
 	text-align: center;
+	ul {
+		display: inline-block;
+		text-align: left;
+		padding-top: 20px;
+		letter-spacing: 1px;
+	}
+	li{
+		list-style-image : url("../app/assets/images/mark2.png");
+	}
+}
 
-	
-}
-#main ul {
-	display: inline-block;
-	text-align: left;
-	padding-top: 20px;
-	letter-spacing: 1px;
-	list-style-image : url("../assets/images/mark2.png");
-}
-.li{
-	padding-top:20px;
-}
-.ent-content h1 {
-	z-index: 50;
-	margin: 0px;
-	font-size: 170px;
-	padding: 1px;
-	font-family: impact;
-	text-shadow: 4px 4px 4px #999999;
-}	
 
-.ent-content .sub {
-	margin-bottom: 10px;
-	padding: 10px;
-	font-family:cursive ,sans-serif;
-	text-shadow: 4px 4px 4px #999999;
-}
-.ent-content p {
-	margin: 0;
-	text-shadow: 4px 4px 4px #999999;
-}
+
 
 .ent-phrase{
 	margin: 0px;
@@ -184,13 +189,16 @@
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+    align-items: center;
+    height: 30px;
 }
 
 .flexbox__item{
-    margin: 0 10px;
+    margin: 0;
     list-style: none;
     font-family: 'ricty diminished', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
+    
 }
 
 

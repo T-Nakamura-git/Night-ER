@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/blog', to: 'home#blog'    
   get '/info', to: 'home#info'
   get '/form', to: 'home#form'
+  get '/detail/:id', to: 'home#detail'
 end
 
 

@@ -6,8 +6,7 @@
 
 .toptopic{
 	color: #aaa;
-	padding: 100px 50px;
-	min-height: 1000px;
+	padding: 50px 50px;
 	top: 0;
     bottom: 0;
     left: 0;
@@ -22,13 +21,18 @@
 
 .header{
 	background-color: #a0c4ff;
-	
-	height:100px;
-	width: 100% ;
+	height: 100px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
 }
 
+
+
+
 .toplogo{
-	height: 30px;
+	height: 50px;
+	margin: 0;
 }
 
 #footer {
@@ -52,3 +56,28 @@ a:hover {
 	background-position: 0 100%;
 	color: #fff;
 }
+
+.sidebar{
+	padding: 50px 50px;
+}
+
+.gmap{
+	min-height: 400px;
+	max-width: 800px;
+}
+
+/*===================================メニューバー*/
+
+
+.slicknav_menu {
+ display:none;/*PC時は非表示*/
+}
+@media screen and (max-width: 700px) {
+	 #slicknav {
+	 	display:none;/*モバイル時は非表示*/
+	}
+	 .slicknav_menu {
+	 	display:block;/*モバイル時は表示*/
+	}
+}
+
